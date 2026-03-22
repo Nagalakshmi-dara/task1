@@ -1,43 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-vector/realistic-style-technology-particle-background_23-2148426704.jpg");
+            background-size: cover;
+            min-height: 90vh;
+        }
+
+        .parent-container {
+            background-color: white;
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+            margin: 5% auto;
+            border-radius: 10px;
+        }
+
+        .parent-container a {
+            color: black;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .form-field {
+            margin: 15px 0;
+        }
+
+        .form-field input {
+            padding: 10px;
+            width: 80%;
+            font-size: 0.9rem;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #AA076B 0%, #61045F 51%, #AA076B 100%);
+            margin: 15px auto;
+            width: 85%;
+            padding: 12px;
+            text-transform: uppercase;
+            background-size: 200% auto;
+            color: white;
+            border-radius: 10px;
+            display: block;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+        }
+
+        .extra-links {
+            margin-top: 10px;
+            font-size: 0.8rem;
+        }
+    </style>
 </head>
+
 <body>
-    <center>
 
-<h2>Login Page</h2>
+    <form class="parent-container" action="./biography.html">
+        <h3>LOGIN</h3>
 
-<table border="2" cellpadding="20">
+        <div class="form-field">
+            <input type="email" placeholder="Enter Email" name="email" required>
+        </div>
 
-<tr>
-<td>
-<form action="./biography.html">
-<form>
-Email:<br>
-<input type="email" placeholder="Enter Email"
-name="email" required><br><br>
-Password:<br>
-<input type="password" placeholder="Enter Password"
-name="password" required><br><br>
-<center>
-    <button>login</button><br><br>
-</center>
+        <div class="form-field">
+            <input type="password" placeholder="Enter Password" name="password" required>
+        </div>
 
-<a href="#">Forgot Password?</a><br><br>
-<p>Don't have an account? 
-<a href="./index.html" target="_blank">Register</a>
-</p>
-</form>
-</form>
+        <button class="btn-grad">LOGIN</button>
 
-</td>
-</tr>
-</table>
+        <div class="extra-links">
+            <a href="#">Forgot Password?</a>
+        </div>
 
-</center>
+        <div class="extra-links">
+            Don't have an account?
+            <a href="./index.html">Register here</a>
+        </div>
+    </form>
 
 </body>
+
 </html>
